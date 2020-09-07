@@ -1,0 +1,60 @@
+html {
+  font-size: 63%;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+}
+
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+}
+
+.header {
+  grid-area: header;
+  background-color: #323232;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-link a:hover {
+  color: #e30b5d;
+}
+
+.brand-name a {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #575757;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
